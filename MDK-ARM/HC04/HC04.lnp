@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"hc04\startup_stm32f407xx.o"
+"hc04\system_stm32f4xx.o"
+"hc04\stm32f4xx_hal_flash_ramfunc.o"
+"hc04\stm32f4xx_hal_tim.o"
+"hc04\stm32f4xx_hal_cortex.o"
+"hc04\stm32f4xx_hal_rcc.o"
+"hc04\stm32f4xx_hal_pwr.o"
+"hc04\stm32f4xx_hal_dma.o"
+"hc04\stm32f4xx_hal_rcc_ex.o"
+"hc04\stm32f4xx_hal_uart.o"
+"hc04\stm32f4xx_hal.o"
+"hc04\stm32f4xx_hal_tim_ex.o"
+"hc04\stm32f4xx_hal_gpio.o"
+"hc04\stm32f4xx_hal_dma_ex.o"
+"hc04\stm32f4xx_hal_flash.o"
+"hc04\stm32f4xx_hal_pwr_ex.o"
+"hc04\stm32f4xx_hal_flash_ex.o"
+"hc04\stm32f4xx_hal_msp.o"
+"hc04\main.o"
+"hc04\stm32f4xx_it.o"
+--library_type=microlib --strict --scatter "HC04\HC04.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HC04.map" -o HC04\HC04.axf
